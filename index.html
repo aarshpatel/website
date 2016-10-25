@@ -7,7 +7,8 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -15,11 +16,14 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Aarsh Patel</h1>
-        <p>Computer Science @ University of Massachusetts Amherst 2014 - 2018 </p>
+        <h1 class="header">Aarsh Patel</h1>
+        <p class="header">Computer Science @ University of Massachusetts Amherst 2014 - 2018 </p>
 
 
-        <p class="view"><a href="https://github.com/aarshpatel">View My GitHub Profile</a></p>
+
+        <ul>
+          <li><a class="buttons github" href="https://github.com/aarshpatel">GitHub Profile</a></li>
+        </ul>
 
       </header>
       <section>
@@ -28,15 +32,18 @@
 
 <hr>
 
-<p>I am a student who is studying Computer Science at the University of Massachusetts Amherst. I am really passionate about creating software and I really like solving problems through code. As of right now, I am very interested in machine learning and web development. I really am passionate about data and love finding knowledge and insight through data. I believe that machine learning could solve many of the world’s problems and that is why I am so interested in it. In addition, I like web development because the joy of building something and seeing it come to life is what makes it really awesome. Creating something on a web page and showing friends and family members is unique experience and it’s something I truly like.</p>
+<p>I am a student who is studying Computer Science at the University of Massachusetts Amherst. I am really passionate about creating software and I really like solving problems through code. As of right now, I am very interested in Machine Learning, Natural Langauge Processing, Web Development. I really am passionate about finding knowledge and insight through data. I believe that machine learning and NLP could solve many of the world’s problems and that is why I am so interested in it. In addition, I like web development because the joy of building something and seeing it come to life is what makes it really awesome. Creating something on a web page and showing friends and family members is unique experience and it’s something I truly like.</p>
 
-<p>On my free time, I like to learn about new technologies, browse reddit and I like to create small projects to build my portfolio/
-knowledge. I’m also a sports fanatic; I like watching football and basketball and especially love playing basketball.</p>
+<p>Currently, I am an Undergraduate Research Assistant working on Natural Language Processing. I am building an automatic paper to reviewer expertise model for conferences. </p>
+
+<p>On my free time, I like to learn about new technologies, browse reddit and I like to create small projects to build my portfolio/knowledge. I’m also a sports fanatic; I like watching football and basketball and especially love playing basketball.</p>
 
 <h3>
 <a id="projects" class="anchor" href="#projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Projects</h3>
 
 <hr>
+
+<p><strong>PicPlay</strong> - App that allows users to upload pictures and find spotify playlists based on the surrounding mood/objects captured in the image. Uses Clarifai's image recognition api to find keywords in the image and then uses those keywords to search the Spotify API for playlists. This was built at HackUmass 2016.</p>
 
 <p><strong>My Health Prognosticator</strong> - Analyzes United Health Group patient data to make health predictions for a user given their past medical history. </p>
 
@@ -91,10 +98,10 @@ knowledge. I’m also a sports fanatic; I like watching football and basketball 
 <p><img src="https://dl.dropboxusercontent.com/u/7432800/Pro%20Pic.jpg" alt="Pro Pic"></p>
       </section>
       <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
   </body>
 </html>
