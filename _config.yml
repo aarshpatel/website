@@ -1,0 +1,8 @@
+title: Aarsh Patel
+description: "Computer Science @ University of Massachusetts Amherst 2014 - 2018 "
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-minimal
+
+gems:
+  - jekyll-mentions
