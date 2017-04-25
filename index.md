@@ -1,7 +1,6 @@
 ### About Me.
 ***
 
-Bhavik Jain has a small penis!!!
 I am a student who is studying Computer Science at the University of Massachusetts Amherst. I am really passionate about creating software and I really like solving problems through code. As of right now, I am very interested in Machine Learning, Natural Langauge Processing, Web Development. I really am passionate about finding knowledge and insight through data. I believe that machine learning and NLP could solve many of the world’s problems and that is why I am so interested in it. In addition, I like web development because the joy of building something and seeing it come to life is what makes it really awesome. Creating something on a web page and showing friends and family members is unique experience and it’s something I truly like.
 
 Currently, I am an Undergraduate Research Assistant working on Natural Language Processing. I am building an automatic paper to reviewer expertise model for conferences. 
