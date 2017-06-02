@@ -7,7 +7,7 @@ On my free time, I like to learn about new technologies, browse reddit and I lik
 
 ### Projects
 ---
-** Expertise Modeling ** - Current research project; ongoing
+**Expertise Modeling** - Current research project; ongoing
 
 **PicPlay** - App that allows users to upload pictures and find spotify playlists based on the surrounding mood/objects captured in the image. Uses Clarifai's image recognition api to find keywords in the image and then uses those keywords to search the Spotify API for playlists. This was built at HackUmass 2016.
 
