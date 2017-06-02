@@ -3,7 +3,7 @@
 
 I am a student who is studying Computer Science at the University of Massachusetts Amherst. I am passionate about creating software and problem solving in general. As of right now, I am very interested in Machine Learning and Natural Langauge Processing. I currently do research at IESL (INformation Extraction Synthesis Laboratory) where I am doing expertise modeling for paper-reviewer matching in conferences. 
 
-On my free time, I like to learn about new technologies, browse reddit and I like to create small projects to build my portfolio/knowledge. I also love to play sports especially basketball and football and just an avid sports fan in general.
+On my free time, I like to learn about new technologies, browse reddit and create small projects to build my portfolio/knowledge. I also love to play sports especially basketball and football and just an avid sports fan in general.
 
 ### Projects
 ---
