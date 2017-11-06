@@ -7,6 +7,9 @@ On my free time, I like to learn about new technologies, browse reddit and creat
 
 ### Projects
 ---
+
+**upTODAYte** - Uptodayte is a news aggregation and visualization tool that collects relevant news articles that took place within the last 24 hours.
+
 **Expertise Modeling for Paper-Reviewer Matching** - Current research project; ongoing
 
 **PicPlay** - App that allows users to upload pictures and find spotify playlists based on the surrounding mood/objects captured in the image. Uses Clarifai's image recognition api to find keywords in the image and then uses those keywords to search the Spotify API for playlists. This project was built at HackUmass 2016.
