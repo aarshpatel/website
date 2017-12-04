@@ -1,74 +1,43 @@
-# Where things are
-source:      .
-destination: ./_site
-plugins_dir:     ./_plugins
-layouts_dir:     ./_layouts
-data_dir: ./_data
-includes_dir: ./_includes
-# collections: null
+# Site settings
+title: A blog about lorem ipsum dolor sit amet
+description: A blog about lorem ipsum dolor sit amet
+baseurl: "/will-jekyll-template" # the subpath of your site, e.g. /blog
+url: "https://willianjusten.com.br" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
-# Handling Reading
-safe:         false
-include:      [".htaccess"]
-exclude:      []
-keep_files:   [".git", ".svn"]
-encoding:     "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+# User settings
+username: Lorem Ipsum
+user_description: Anon Developer at Lorem Ipsum Dolor
+user_title: Anon Developer
+email: anon@anon.com
+twitter_username: lorem_ipsum
+github_username:  lorem_ipsum
+gplus_username:  lorem_ipsum
+disqus_username: lorem_ipsum
 
-# Filtering Content
-show_drafts: null
-limit_posts: 0
-future:      true
-unpublished: false
-
-# Plugins
-whitelist: []
-gems:      [jekyll-paginate]
-
-# Conversion
-markdown:    kramdown
+# Build settings
+markdown: kramdown
 highlighter: rouge
-lsi:         false
-excerpt_separator: "\n\n"
-# incremental: false
-
-# Serving
-detach:  false
-port:    4000
-host:    127.0.0.1
-baseurl: "http://aarshpatel.github.io/phantom/" # does not include hostname
-
-# Outputting
-permalink:     date
-paginate:       10
-paginate_path: /page:num
-timezone:      null
-
-quiet:    false
-defaults: []
-
-# Markdown Processors
-rdiscount:
-  extensions: []
-
-redcarpet:
-  extensions: []
-
-kramdown:
-  auto_ids:       true
-  footnote_nr:    1
-  entity_output:  as_char
-  toc_levels:     1..6
-  smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-  coderay:
-    coderay_wrap:              div
-    coderay_line_numbers:      inline
-    coderay_line_number_start: 1
-    coderay_tab_width:         4
-    coderay_bold_every:        10
-    coderay_css:               style
+permalink: /:title/
 
 
-include: ['_pages']
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+# Links to include in menu navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+  - title: Series
+    url: /series
+  - title: Tags
+    url: /tags
+  - title: About Me
+    url: /about
+
+# exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules']
