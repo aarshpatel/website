@@ -3,9 +3,9 @@ description: "Undergrad at UMass Amherst"
 about: "I am currently a CS student at UMass Amherst focusing on AI and Machine Learning"
 location: "Amherst, MA"
 email: aarshpatel@umass.edu
-baseurl: "/material-theme"
+baseurl: "/"
 
-url: "aarshpatel.github.io" # replace by your site's url
+url: "http://www.aarshpatel.github.io" # replace by your site's url
 twitter_username: your-name
 github_username:  aarshpatel
 author: "Aarsh Patel"
