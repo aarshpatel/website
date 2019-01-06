@@ -1,7 +1,7 @@
 ---
 layout: page
-title: simple site
-tagline: Easy websites with GitHub Pages
+title: Aarsh Patel
+tagline: MS in Computer Science at Umass Amherst
 description: Minimal tutorial on making a simple website with GitHub Pages
 ---
 
