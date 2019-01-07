@@ -21,13 +21,16 @@ Projects
 2. [Modeling Affect Intensity in Tweets](https://github.com/aarshpatel/Modeling-Affect-Intensity)
 
 **Abstract**:  Sentiment or affect detection is a problem that has long been under consideration. However, a novel problem arises with affect intensity detection, in which we already know the affect corresponding to the document, and want to predict the real-valued intensity of that affect felt by the author. Particularly, our domain of interest is tweets. We tackle this problem by constructing multiple feature representations of the tweet data, ranging from sparse features such as bag-of-words to distributional representations such as GloVe. In addition, we create several regression models ranging from support vector regression to deep neural networks. Our best result is given by a deep neural network, trained on a combination of sentiment lexicon features and GloVe embeddings, achieving a Pearson correlation coefficient of 0.681. Our results successfuly outperform the Pearson correlation coefficient described in the original task paper.
-4. [Predictive Analysis on Real-Time Machine Performance Data](https://github.com/aarshpatel/Real-Time-Predictive-Analytics)
+
+3. [Predictive Analysis on Real-Time Machine Performance Data](https://github.com/aarshpatel/Real-Time-Predictive-Analytics)
 
 Our app is a platform for predictive analysis on real-time machine performance data from Black & Decker. Hence, its primary purpose is to anticipate whether a machine would fail based on the given data. A secondary objective was to build an IoT dashboard to visualize results of exploratory data analysis (e.g. summary statistics).
 
-3. [Uptodayte](https://github.com/aarshpatel/upTODAYte)
+4. [Uptodayte](https://github.com/aarshpatel/upTODAYte)
 
 Uptodayte is a news aggregation and visualization tool that collects relevant news articles that took place within the last 24 hours. Our robust web application continuously scrapes the News API and implements our robust machine algorithm to identify the top headlines of the day. Hovering over a location marker will reveal a tooltip containing the headline of the corresponding news article. Clicking on a marker will open the news article about the story or event that took place at that location marker. Uptodayte was designed with usability and user intuition in mind. We believe that visualizing data through its properties leads to a far better understanding of the overall picture than a crude listing, and this is exactly the vision behind Uptodayte. For these reasons, we believe Uptodayte is usable right out of the box without instructions.
 
 Other Fun Stuff
 ---
+In my spare time, I enjoy playing basketball and football and performing outdoor activities such as
+hiking & biking, traveling the world and learning new things from [coursera](cousera.org).
