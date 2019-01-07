@@ -12,7 +12,7 @@ I am currently a Masters student studying Computer Science at UMass Amherst. I'm
 Processing. I spent the summer of 2016 working at [Optum](https://www.optum.com/) on applying machine learning to the healthcare domain and the last two summers doing research with [Professor Andrew McCallum](https://people.cs.umass.edu/~mccallum/) in his lab [IESL](http://www.iesl.cs.umass.edu/) doing some NLP work related to expertise modeling and paper-review assignment
 for CS conferences.
 
-Here is a link to my [resume](https://drive.google.com/file/d/1KDxbIhRiwbbOHgUvigZkZnjVcHOfCoa2/view?usp=sharing), my [github profile](github.com/aarshpatel), and my [linkedin](https://www.linkedin.com/in/aarsh-patel-407418117/)
+Here is a link to my [resume](https://drive.google.com/file/d/1KDxbIhRiwbbOHgUvigZkZnjVcHOfCoa2/view?usp=sharing), my [github profile](www.github.com/aarshpatel), and my [linkedin](https://www.linkedin.com/in/aarsh-patel-407418117/)
 
 Projects
 ---
