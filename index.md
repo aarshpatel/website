@@ -14,7 +14,8 @@ for CS conferences.
 
 Projects
 ---
-1. (Super Resolution on Low Quality Facial Images)[https://github.com/aarshpatel/Super-Resolution-on-Low-Quality-image-of-Faces]
+1. [Super Resolution on Low Quality Facial Images](https://github.com/aarshpatel/Super-Resolution-on-Low-Quality-image-of-Faces)
+
 **Abstract**: Reconstruction of obfuscated images is the problem oftransforming a low-definition image into a higher-definitionimage.  More specifically, facial reconstruction from obfus-cated images is transforming a blurry picture of a person’sface  into  a  unambiguous  depiction  of  said  person’s  face.We use different architectures of Convolutional Neural Net-works inorder to tackle this problem.  We apply our modelsto the Labeled Faces in the Wild dataset by obfuscating thefaces using a Gaussian blur. We evaluate our models usingthe PNSR metric.  We also explore different objective func-tions  such  as  pixel  loss,  perceptual  loss,  and  a  weightedcombination of pixel and perceptual loss.  Our experimentsdemonstrate that models using pixel loss generate the high-est PSNR values while models using perceptual loss gen-erate the most aesthetically pleasing reconstructions.  Ourqualitative results show that our models produce recogniz-able faces from blurred faces
 
 2.
