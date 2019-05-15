@@ -16,6 +16,11 @@ Here is a link to my [resume](https://drive.google.com/file/d/1KDxbIhRiwbbOHgUvi
 
 Projects
 ---
+
+[German-English Neural Machine Translation](https://github.com/aarshpatel/German-English-MT)
+**Abstract**: Our goal was to build a Neural Machine Translation model to translate from German to English. Namely, we aim to retrieve coherent English translations from German source sentences using a parallel corpus of German-English sentence pairs as our primary data source. This task is of paramount importance in today’s world, in the fields of academia and industry alike. The motivation of our project is to overcome the language barrier and eventually improve communication channels for people worldwide. Translation between languages is of paramount importance in the modern age, in both academic and industrial settings alike. We experiment with Attentional GRU and Transformer inorder to build NMT systems and also experiment with a boosting technique. All of our experiments and results are described in our [paper](https://umass.box.com/s/idnntuhs7cclglfglsl8iqhen6f6xn1n). 
+
+
 [Super Resolution on Low Quality Facial Images](https://github.com/aarshpatel/Super-Resolution-on-Low-Quality-image-of-Faces)
 
 **Abstract**: Reconstruction of obfuscated images is the problem of transforming a low-definition image into a higher definition image. More specifically, facial reconstruction from obfuscated images is transforming a blurry picture of a person’s face into a unambiguous depiction of said person’s face. We use different architectures of Convolutional Neural Networks inorder to tackle this problem. We apply our models to the Labeled Faces in the Wild dataset by obfuscating thefaces using a Gaussian blur. We evaluate our models using the PNSR metric. We also explore different objective functions such as pixel loss, perceptual loss, and a weighted combination of pixel and perceptual loss. Our experiments demonstrate that models using pixel loss generate the highest PSNR values while models using perceptual loss generate the most aesthetically pleasing reconstructions. Our qualitative results show that our models produce recognizable faces from blurred faces.
