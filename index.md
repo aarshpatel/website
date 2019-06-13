@@ -13,6 +13,13 @@ Processing. I spent the summer of 2016 working at [Optum](https://www.optum.com/
 for CS conferences. For the summer of 2019, I'll be interning at [Signify](https://www.signify.com/en-us) (Philips Lighting) where I'll be applying Deep Learning and Computer Vision to the lighting domain. Here is a link to my [resume](https://drive.google.com/file/d/1KDxbIhRiwbbOHgUvigZkZnjVcHOfCoa2/view?usp=sharing), my [github profile](https://github.com/aarshpatel), and my [linkedin](https://www.linkedin.com/in/aarsh-patel-407418117/)
 
 
+Experience
+---
+* Deep Learning Intern at [Signify](https://www.signify.com/en-us) (Philips Lighting) [June 2019 - Present]
+* Web Developer for UMass IT [Jan 2019 - Present]
+* Undergrad Research Assistant at [IESL](http://www.iesl.cs.umass.edu/) [September 2016 - January 2018]
+* Software Engineer Intern at [Optum](http://www.optum.com/) [June - August 2016]
+
 Projects
 ---
 
@@ -36,13 +43,6 @@ Our app is a platform for predictive analysis on real-time machine performance d
 [Uptodayte](https://github.com/aarshpatel/upTODAYte)
 
 Uptodayte is a news aggregation and visualization tool that collects relevant news articles that took place within the last 24 hours. Our robust web application continuously scrapes the News API and implements our robust machine algorithm to identify the top headlines of the day. Hovering over a location marker will reveal a tooltip containing the headline of the corresponding news article. Clicking on a marker will open the news article about the story or event that took place at that location marker. Uptodayte was designed with usability and user intuition in mind. We believe that visualizing data through its properties leads to a far better understanding of the overall picture than a crude listing, and this is exactly the vision behind Uptodayte. For these reasons, we believe Uptodayte is usable right out of the box without instructions.
-
-Experience
----
-* Deep Learning Intern at [Signify](https://www.signify.com/en-us) (Philips Lighting) [June 2019 - Present]
-* Web Developer for UMass IT [Jan 2019 - Present]
-* Undergrad Research Assistant at [IESL](http://www.iesl.cs.umass.edu/) [September 2016 - January 2018]
-* Software Engineer Intern at [Optum](http://www.optum.com/) [June - August 2016]
 
 Other Fun Stuff
 ---
