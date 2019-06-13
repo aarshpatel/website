@@ -39,7 +39,7 @@ Uptodayte is a news aggregation and visualization tool that collects relevant ne
 
 Experience
 ---
-* Signify(https://www.signify.com/en-us) (Philips Lighting) [June 2019 - Present]
+* Deep Learning Intern at [Signify](https://www.signify.com/en-us) (Philips Lighting) [June 2019 - Present]
 * Web Developer for UMass IT [Jan 2019 - Present]
 * Undergrad Research Assistant at [IESL](http://www.iesl.cs.umass.edu/) [September 2016 - January 2018]
 * Software Engineer Intern at [Optum](http://www.optum.com/) [June - August 2016]
