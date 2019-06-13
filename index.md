@@ -7,10 +7,10 @@ tagline: MS in Computer Science at Umass Amherst
 About Me
 ---
 
-<img src="https://avatars1.githubusercontent.com/u/5000775?s=460&v=4" width="150" height="150" style="float:left;margin-right:20px;"/> 
+<img src="https://avatars1.githubusercontent.com/u/5000775?s=460&v=4" width="150" height="150" style="float:left;margin-right:25px;"/> 
 I am currently a Masters student studying Computer Science at UMass Amherst. I'm particularly interested the field of Machine Learning and Natural Language
-Processing. I spent the summer of 2016 working at [Optum](https://www.optum.com/) on applying machine learning to the healthcare domain and the last two summers doing research with [Professor Andrew McCallum](https://people.cs.umass.edu/~mccallum/) in his lab [IESL](http://www.iesl.cs.umass.edu/) doing some NLP work related to expertise modeling and paper-review assignment
-for CS conferences. For the summer of 2019, I'll be interning at [Signify](https://www.signify.com/en-us) (Philips Lighting) where I'll be doing Deep Learning and Computer Vision applied to the lighting domain. Here is a link to my [resume](https://drive.google.com/file/d/1KDxbIhRiwbbOHgUvigZkZnjVcHOfCoa2/view?usp=sharing), my [github profile](https://github.com/aarshpatel), and my [linkedin](https://www.linkedin.com/in/aarsh-patel-407418117/)
+Processing. I spent the summer of 2016 working at [Optum](https://www.optum.com/) where I applied machine learning to the healthcare domain and the last two summers doing research with [Professor Andrew McCallum](https://people.cs.umass.edu/~mccallum/) in his lab [IESL](http://www.iesl.cs.umass.edu/) doing work related to expertise modeling and paper-review assignment
+for CS conferences. For the summer of 2019, I'll be interning at [Signify](https://www.signify.com/en-us) (Philips Lighting) where I'll be applying Deep Learning and Computer Vision to the lighting domain. Here is a link to my [resume](https://drive.google.com/file/d/1KDxbIhRiwbbOHgUvigZkZnjVcHOfCoa2/view?usp=sharing), my [github profile](https://github.com/aarshpatel), and my [linkedin](https://www.linkedin.com/in/aarsh-patel-407418117/)
 
 
 Projects
