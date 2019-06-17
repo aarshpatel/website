@@ -13,9 +13,12 @@ Processing. I spent the summer of 2016 working at [Optum](https://www.optum.com/
 for CS conferences. For the summer of 2019, I'll be interning at [Signify](https://www.signify.com/en-us) (Philips Lighting) where I'll be applying Deep Learning and Computer Vision to the lighting domain. 
 
 &nbsp;
-<a href="https://drive.google.com/file/d/1hBtD1asQuTUDkWcwnDmjiuUZQrJfqhAp/view?usp=sharing"><img src="https://simpleicons.org/icons/wheniwork.svg" width="25" height="25" style="float:left;margin-right:24px;"/></a>
+
+<div style="float:left;margin-right:24px;">
+<a href="https://drive.google.com/file/d/1hBtD1asQuTUDkWcwnDmjiuUZQrJfqhAp/view?usp=sharing"><img src="https://simpleicons.org/icons/wheniwork.svg" width="25" height="25"/></a>
 <a href="https://github.com/aarshpatel"><img src="https://simpleicons.org/icons/github.svg" width="25" height="25"/></a>
 <a href="https://www.linkedin.com/in/aarsh-patel-407418117/"><img src="https://simpleicons.org/icons/linkedin.svg" width="25" height="25"/></a>
+</div>
 
 Experience
 ---
