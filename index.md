@@ -50,7 +50,7 @@ Uptodayte is a news aggregation and visualization tool that collects relevant ne
 
 Presentations
 --- 
-I gave a talk at Signify (Philips Lighting) on Text Augmented Image Classification. Check out the slides [here](https://umass.box.com/s/awb12yb26ekf9t9d5lmk5652pd1m4o9f)
+I gave a talk at Signify (Philips Lighting) on **Text Augmented Image Classification**. Check out the slides [here](https://umass.box.com/s/awb12yb26ekf9t9d5lmk5652pd1m4o9f)
 
 Other Fun Stuff
 ---
