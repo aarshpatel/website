@@ -48,9 +48,11 @@ Our app is a platform for predictive analysis on real-time machine performance d
 
 Uptodayte is a news aggregation and visualization tool that collects relevant news articles that took place within the last 24 hours. Our robust web application continuously scrapes the News API and implements our robust machine algorithm to identify the top headlines of the day. Hovering over a location marker will reveal a tooltip containing the headline of the corresponding news article. Clicking on a marker will open the news article about the story or event that took place at that location marker. Uptodayte was designed with usability and user intuition in mind. We believe that visualizing data through its properties leads to a far better understanding of the overall picture than a crude listing, and this is exactly the vision behind Uptodayte. For these reasons, we believe Uptodayte is usable right out of the box without instructions.
 
-Presentations
+Presentations/Notes
 --- 
 I gave a talk at Signify (Philips Lighting) on **Text Augmented Image Classification**. Check out the slides [here](https://umass.box.com/s/awb12yb26ekf9t9d5lmk5652pd1m4o9f)
+
+I like to keep a set of notes of things that I learn [here](https://drive.google.com/drive/folders/1Hm2ILxy6yczRy4j3-IGaYjYfIxA6PCWt?usp=sharing). Check them out!
 
 Other Fun Stuff
 ---
