@@ -19,6 +19,7 @@ for CS conferences. For the summer of 2019, I'll be interning at [Signify](https
 
 Experience
 ---
+* Applied Research Scientist at Amazon Alexa [Sep 2019 - Dec 2019]
 * Deep Learning Intern at [Signify](https://www.signify.com/en-us) (Philips Lighting) [June 2019 - Present]
 * Web Developer for UMass IT [Jan 2019 - Present]
 * Undergrad Research Assistant at [IESL](http://www.iesl.cs.umass.edu/) [September 2016 - January 2018]
