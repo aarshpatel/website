@@ -1,16 +1,18 @@
 ---
 layout: page
 title: Aarsh Patel
-tagline: MS in Computer Science at Umass Amherst
+tagline: ML Engineer/Researcher
 ---
 
 About Me
 ---
 
 <img src="https://avatars1.githubusercontent.com/u/5000775?s=460&v=4" width="150" height="150" style="float:left;margin-right:25px;"/> 
-I am currently a Masters student studying Computer Science at UMass Amherst. I'm particularly interested the field of Machine Learning and Natural Language
-Processing. I spent the summer of 2016 working at [Optum](https://www.optum.com/) where I applied machine learning to the healthcare domain and the last two summers doing research with Professor [Andrew McCallum](https://people.cs.umass.edu/~mccallum/) in his lab [IESL](http://www.iesl.cs.umass.edu/) doing work related to expertise modeling and paper-review assignment
-for CS conferences. For the summer of 2019, I'll be interning at [Signify](https://www.signify.com/en-us) (Philips Lighting) where I'll be applying Deep Learning and Computer Vision to the lighting domain. In the Fall of 2019, I'll be working at Amazon Alexa as a Research Scientist where I'll be working on NLU applications.
+I'm an ML engineer/researcher with over 5 years of experience and a strong background in software engineering and NLP research. I am primarily interested in building products which positively impact the world. I'm excited using ML & NLP to solve problems which can improve people's everyday lives. 
+
+During my time at Amazon as an Applied Scientist, I worked on improving their NLU models. I published a [workshop paper](https://www.amazon.science/publications/towards-classification-parity-across-cohorts) at ICLR 2020 on algorithmic fairness applied to intent/domain classification. I also implementing/experimenting with semi-supervised learning techniques to leverage massive amounts of unlabeled data to build NLU models.
+
+Previously I was a masters student in CS at UMass Amherst, where I focused on ML and NLP.
 
 <div style="margin-left:24%;">
 <a href="https://drive.google.com/file/d/1hBtD1asQuTUDkWcwnDmjiuUZQrJfqhAp/view?usp=sharing"><img src="https://simpleicons.org/icons/wheniwork.svg" width="25" height="25"/></a>
@@ -20,7 +22,9 @@ for CS conferences. For the summer of 2019, I'll be interning at [Signify](https
 
 Experience
 ---
-* Applied Research Scientist at Amazon Alexa [Sep 2019 - Dec 2019]
+* Senior Machine Learning Engineer at Oribta [April 2022 - Dec 2023]
+* Applied Research Scientist at Amazon Alexa [June 2020 - Nov 2021]
+* Applied Research Scientist Intern at Amazon Alexa [Sep 2019 - Dec 2019]
 * Deep Learning Intern at [Signify](https://www.signify.com/en-us) (Philips Lighting) [June 2019 - Present]
 * Web Developer for UMass IT [Jan 2019 - Present]
 * Undergrad Research Assistant at [IESL](http://www.iesl.cs.umass.edu/) [September 2016 - January 2018]
@@ -58,5 +62,5 @@ I like to keep a set of notes of things that I learn [here](https://drive.google
 
 Other Fun Stuff
 ---
-In my spare time, I enjoy playing basketball and football and performing outdoor activities such as
-hiking & biking, traveling the world and learning new things from [coursera](cousera.org).
+In my spare time, I enjoy playing basketball, football and performing outdoor activities such as
+hiking & biking, traveling the world and learning new things about ML, NLP and Generative AI.
