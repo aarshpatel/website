@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aarsh Patel</title>
+  <meta name="author" content="Aarsh Patel">
+  <meta name="description" content="Aarsh Patel — Senior Applied AI Scientist at Judi Health, building LLM systems that automate prior authorization.">
+  <meta property="og:title" content="Aarsh Patel — Senior Applied AI Scientist">
+  <meta property="og:description" content="LLMs and NLP for healthcare: prior authorization, medical coding, and conversational AI.">
+  <meta name="theme-color" content="#1d2021">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%231d2021%27/%3E%3Ctext x=%2732%27 y=%2743%27 font-family=%27Arial%27 font-size=%2728%27 font-weight=%27bold%27 fill=%27%23fabd2f%27 text-anchor=%27middle%27%3EAP%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Gruvbox dark */
+      --bg: #1d2021;
+      --bg1: #3c3836;
+      --text: #bdae93;
+      --heading: #ebdbb2;
+      --dim: #928374;
+      --accent: #fabd2f;
+      --accent2: #8ec07c;
+      --accent2-bg: rgba(142, 192, 124, .12);
+      --card-hover: rgba(60, 56, 54, .55);
+      --border: rgba(168, 153, 132, .18);
+      --spot: rgba(254, 128, 25, .07);
+      --mono: "JetBrains Mono", ui-monospace, monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    ::selection { background: #fabd2f; color: #1d2021; }
+    a { color: inherit; text-decoration: none; }
+    strong { color: var(--heading); font-weight: 500; }
+    .inline-link { color: var(--heading); font-weight: 500; }
+    .inline-link:hover, .inline-link:focus-visible { color: var(--accent); }
+
+    /* Cursor spotlight (desktop only) */
+    .spotlight {
+      pointer-events: none; position: fixed; inset: 0; z-index: 0;
+      transition: background .2s;
+    }
+
+    .layout {
+      position: relative; z-index: 1;
+      max-width: 1240px; margin: 0 auto;
+      padding: 0 24px;
+      display: flex; gap: 64px;
+    }
+
+    /* ---------- Left panel ---------- */
+    header.side {
+      position: sticky; top: 0;
+      height: 100vh; width: 46%;
+      padding: 96px 0;
+      display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .side h1 {
+      color: var(--heading);
+      font-size: 48px; line-height: 1.05; font-weight: 700; letter-spacing: -0.025em;
+    }
+    .side h2 { color: var(--accent); font-size: 20px; font-weight: 500; margin-top: 14px; letter-spacing: -0.01em; }
+    .side .tagline { max-width: 340px; margin-top: 16px; }
+
+    nav.toc { margin-top: 64px; }
+    nav.toc ul { list-style: none; }
+    nav.toc a {
+      font-family: var(--mono);
+      display: inline-flex; align-items: center; gap: 16px; padding: 10px 0;
+      font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+      color: var(--dim);
+    }
+    nav.toc a .line {
+      display: block; height: 1px; width: 32px; background: var(--dim);
+      transition: width .2s, background .2s;
+    }
+    nav.toc a:hover { color: var(--heading); }
+    nav.toc a:hover .line { width: 64px; background: var(--heading); }
+    nav.toc a.active { color: var(--accent); }
+    nav.toc a.active .line { width: 64px; background: var(--accent); }
+
+    .socials { display: flex; gap: 20px; align-items: center; }
+    .socials a { color: var(--dim); transition: color .15s; }
+    .socials a:hover { color: var(--accent); }
+    .socials svg { width: 24px; height: 24px; fill: currentColor; display: block; }
+
+    /* ---------- Right content ---------- */
+    main { width: 54%; padding: 96px 0 40vh; }
+    main section { margin-bottom: 120px; scroll-margin-top: 96px; }
+    .sec-title { display: none; }
+    main p + p { margin-top: 16px; }
+
+    /* Cards (experience / projects) */
+    .list { list-style: none; display: flex; flex-direction: column; gap: 48px; }
+    .item {
+      position: relative; display: grid; grid-template-columns: 140px 1fr; gap: 16px;
+      transition: opacity .2s;
+    }
+    .item::before {
+      content: ""; position: absolute; inset: -16px -24px; border-radius: 8px;
+      transition: background .2s, box-shadow .2s; z-index: -1;
+    }
+    .list:hover .item { opacity: .5; }
+    .list:hover .item:hover { opacity: 1; }
+    .item:hover::before {
+      background: var(--card-hover);
+      box-shadow: inset 0 1px 0 0 rgba(235,219,178,.06), 0 10px 30px -15px rgba(0,0,0,.6);
+    }
+    .when {
+      font-family: var(--mono);
+      font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase;
+      color: var(--dim); padding-top: 4px;
+    }
+    .item h3 { color: var(--heading); font-size: 16px; font-weight: 500; line-height: 1.4; }
+    .item h3 a { display: inline-flex; align-items: baseline; gap: 4px; }
+    .item h3 a::after {
+      content: ""; position: absolute; inset: -16px -24px; z-index: 1;
+    }
+    .item:hover h3, .item:hover h3 a { color: var(--accent); }
+    .item h3 .arrow { display: inline-block; transition: transform .15s; font-size: 14px; }
+    .item:hover h3 .arrow { transform: translate(2px, -2px); }
+    .item .sub { color: var(--dim); font-size: 15px; }
+    .item p, .item ul { font-size: 14.5px; margin-top: 8px; }
+    .item ul { padding-left: 16px; }
+    .item li + li { margin-top: 6px; }
+    .item li::marker { color: var(--dim); }
+    .item .links { position: relative; z-index: 2; display: flex; gap: 16px; margin-top: 10px; font-size: 14px; font-weight: 500; }
+    .item .links a { color: var(--heading); }
+    .item .links a:hover { color: var(--accent); }
+
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; list-style: none; }
+    .item ul.chips { padding-left: 0; margin-top: 14px; }
+    .chips li + li { margin-top: 0; }
+    .chips li {
+      font-size: 12px; font-weight: 500; line-height: 1.4;
+      color: var(--accent2); background: var(--accent2-bg);
+      padding: 4px 12px; border-radius: 999px;
+    }
+
+    .more {
+      display: inline-flex; gap: 6px; align-items: center; margin-top: 48px;
+      color: var(--heading); font-weight: 600; font-size: 15px;
+    }
+    .more:hover { color: var(--accent); }
+    .more span { transition: transform .15s; }
+    .more:hover span { transform: translateX(4px); }
+
+    .earlier { margin-top: 40px; border-top: 1px solid var(--border); padding-top: 24px; }
+    .earlier h4 {
+      font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+      color: var(--dim); margin-bottom: 14px;
+    }
+    .earlier div { display: grid; grid-template-columns: 140px 1fr; gap: 16px; font-size: 14.5px; padding: 6px 0; }
+    .earlier div span:first-child { font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--dim); padding-top: 2px; }
+
+    .skills-row { display: grid; grid-template-columns: 140px 1fr; gap: 16px; }
+    .skills-row + .skills-row { margin-top: 20px; }
+    .skills-row .chips { margin-top: 0; }
+
+    footer.note { font-size: 14px; color: var(--dim); max-width: 440px; }
+    footer.note a { color: var(--text); font-weight: 500; }
+    footer.note a:hover { color: var(--accent); }
+
+    /* ---------- Mobile ---------- */
+    @media (max-width: 1024px) {
+      .layout { flex-direction: column; gap: 0; padding: 0 20px; }
+      header.side { position: static; height: auto; width: 100%; padding: 64px 0 24px; }
+      nav.toc { display: none; }
+      .socials { margin-top: 32px; }
+      main { width: 100%; padding: 24px 0 64px; }
+      main section { margin-bottom: 80px; }
+      .sec-title {
+        display: block; position: sticky; top: 0; z-index: 5;
+        margin: 0 -20px 24px; padding: 16px 20px;
+        background: rgba(29,32,33,.85); backdrop-filter: blur(8px);
+        color: var(--heading); font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+      }
+      .list:hover .item { opacity: 1; }
+      .item:hover::before { background: none; box-shadow: none; }
+    }
+    @media (max-width: 640px) {
+      .side h1 { font-size: 38px; }
+      .item, .earlier div, .skills-row { grid-template-columns: 1fr; gap: 6px; }
+      .when { padding-top: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+<div class="spotlight" id="spotlight"></div>
+
+<div class="layout">
+
+  <header class="side">
+    <div>
+      <h1><a href="#">Aarsh Patel</a></h1>
+      <h2>Senior Applied AI Scientist at Judi Health</h2>
+      <p class="tagline">I build LLM and NLP systems that take manual work out of healthcare, from prior authorization to medical coding.</p>
+
+      <nav class="toc" aria-label="Sections">
+        <ul>
+          <li><a href="#about"><span class="line"></span>About</a></li>
+          <li><a href="#experience"><span class="line"></span>Experience</a></li>
+          <li><a href="#research"><span class="line"></span>Research</a></li>
+          <li><a href="#projects"><span class="line"></span>Projects</a></li>
+          <li><a href="#skills"><span class="line"></span>Skills</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="socials">
+      <a href="https://github.com/aarshpatel" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/aarsh-patel-407418117/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+      </a>
+      <a href="mailto:aarsh.jp@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5v2.2z"/></svg>
+      </a>
+      <a href="Aarsh_Patel_Resume.pdf" target="_blank" rel="noopener" aria-label="Resume (PDF)">
+        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 7V3.5L18.5 9H13zM8 13h8v1.5H8V13zm0 3h8v1.5H8V16z"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="about" aria-label="About">
+      <h2 class="sec-title">About</h2>
+      <p>I'm a <strong>Senior Applied AI Scientist at Judi Health</strong>, where I work on automating <strong>prior authorization (PA)</strong>. I use LLMs to cut down the manual review that slows patients' access to care.</p>
+      <p>I've spent 6+ years building NLP and LLM systems that ship to production. At <a class="inline-link" href="https://www.codametrix.com" target="_blank" rel="noopener">CodaMetrix</a>, I automated medical coding with fine-tuned BERT and Llama models and clinical information extraction. At <a class="inline-link" href="https://orbita.ai" target="_blank" rel="noopener">Orbita</a>, I led a generative AI virtual assistant that went to 10+ healthcare organizations. Before that, I built semi-supervised NLU models at <strong>Amazon Alexa</strong>.</p>
+      <p>I studied Computer Science (BS and MS) at <strong>UMass Amherst</strong>, where I did research in Andrew McCallum's <a class="inline-link" href="http://www.iesl.cs.umass.edu/" target="_blank" rel="noopener">IESL</a> lab. Outside work, I play basketball and football, hike, bike, and travel whenever I can.</p>
+    </section>
+
+    <section id="experience" aria-label="Experience">
+      <h2 class="sec-title">Experience</h2>
+      <ol class="list">
+        <li class="item">
+          <div class="when">2026 — Present</div>
+          <div>
+            <h3>Senior Applied AI Scientist · Judi Health</h3>
+            <ul>
+              <li>Building LLM-based systems to automate prior authorization (PA) review.</li>
+            </ul>
+            <ul class="chips"><li>LLMs</li><li>Prior authorization</li><li>Healthcare AI</li></ul>
+          </div>
+        </li>
+        <li class="item">
+          <div class="when">2024 — 2026</div>
+          <div>
+            <h3>Applied Research Scientist · CodaMetrix</h3>
+            <ul>
+              <li>Improved ICD and CPT code classification and extraction F1 by <strong>20%</strong> by replacing SVM-based models with fine-tuned BERT and LLM components.</li>
+              <li>Built and deployed a primary ICD code verifier with a fine-tuned Llama model, reaching <strong>96% F1</strong> on primary code placement.</li>
+              <li>Built NLP extraction pipelines over clinical notes and discharge summaries, improving end-to-end case automation by <strong>15%</strong>.</li>
+              <li>Built a confidence-calibration framework that turns health-system quality targets into pipeline thresholds.</li>
+            </ul>
+            <ul class="chips"><li>Llama</li><li>BERT</li><li>Clinical NLP</li><li>Calibration</li><li>Databricks</li></ul>
+          </div>
+        </li>
+        <li class="item">
+          <div class="when">2022 — 2023</div>
+          <div>
+            <h3>Senior Machine Learning Engineer · Orbita</h3>
+            <ul>
+              <li>Led end-to-end development of a patient-facing <strong>generative AI virtual assistant</strong> that reduces inbound call volume, adopted by <strong>10+ healthcare organizations</strong>.</li>
+              <li>Built the core RAG and prompt-engineering framework on OpenAI GPT models.</li>
+              <li>Designed <em>Blaze</em>, an entity-extraction framework for medical terms that made the assistant's decisions more accurate.</li>
+            </ul>
+            <ul class="chips"><li>RAG</li><li>GPT</li><li>LangChain</li><li>Pinecone</li><li>NER</li></ul>
+          </div>
+        </li>
+        <li class="item">
+          <div class="when">2020 — 2021</div>
+          <div>
+            <h3>Applied Research Scientist · Amazon Alexa</h3>
+            <ul>
+              <li>Applied semi-supervised learning over millions of unlabeled utterances for intent and domain classification, cutting training time by <strong>20%</strong>.</li>
+              <li>Matched fully supervised performance with only <strong>50% of the labeled data</strong>, using pseudo-labeling built on BERT/GPT embeddings and clustering.</li>
+            </ul>
+            <ul class="chips"><li>Semi-supervised learning</li><li>NLU</li><li>PyTorch</li><li>AWS</li></ul>
+          </div>
+        </li>
+        <li class="item">
+          <div class="when">Fall 2019</div>
+          <div>
+            <h3>Applied Research Scientist Intern · Amazon Alexa</h3>
+            <ul>
+              <li>Researched fairness in NLU and reduced performance variance across user cohorts by <strong>10–12%</strong>, which led to an ICLR 2020 workshop paper.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+
+      <div class="earlier">
+        <h4>Earlier</h4>
+        <div><span>Summer 2019</span><span>Deep Learning Intern · Signify (Philips Lighting)</span></div>
+        <div><span>2019</span><span>Web Developer · UMass IT</span></div>
+        <div><span>2016 — 2018</span><span>Undergrad Research Assistant · IESL, UMass Amherst</span></div>
+        <div><span>Summer 2016</span><span>Software Engineer Intern · Optum</span></div>
+        <div><span>2014 — 2020</span><span>B.S. and M.S. in Computer Science · UMass Amherst</span></div>
+      </div>
+
+      <a class="more" href="Aarsh_Patel_Resume.pdf" target="_blank" rel="noopener">View full résumé <span>→</span></a>
+    </section>
+
+    <section id="research" aria-label="Research">
+      <h2 class="sec-title">Research</h2>
+      <ol class="list">
+        <li class="item">
+          <div class="when">ICLR 2020</div>
+          <div>
+            <h3>Towards Classification Parity Across Cohorts</h3>
+            <div class="sub">ML Workshop · ICLR 2020</div>
+            <p>Fairness work that goes beyond explicit demographic variables. It defines <em>implicit cohorts</em>, groups of users who share language patterns, found by clustering utterance embeddings, and measures classification gaps across both kinds of cohort.</p>
+          </div>
+        </li>
+        <li class="item">
+          <div class="when">2019 · Talk</div>
+          <div>
+            <h3>Text-Augmented Image Classification</h3>
+            <div class="sub">Signify (Philips Lighting)</div>
+            <p>Using text signals to improve image classification for the lighting domain.</p>
+            <div class="links">
+              <a href="https://umass.box.com/s/awb12yb26ekf9t9d5lmk5652pd1m4o9f" target="_blank" rel="noopener">Slides ↗</a>
+              <a href="https://umass.box.com/s/ncncun7xfm04diy8q8my7ugxb3sdxzr8" target="_blank" rel="noopener">Internship summary ↗</a>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="projects" aria-label="Projects">
+      <h2 class="sec-title">Projects</h2>
+      <ol class="list">
+        <li class="item">
+          <div class="when">2019</div>
+          <div>
+            <h3><a href="https://github.com/aarshpatel/German-English-MT" target="_blank" rel="noopener">German→English Neural MT <span class="arrow">↗</span></a></h3>
+            <p>Attentional GRU and Transformer translation models trained on a parallel corpus, plus experiments with data boosting.</p>
+            <div class="links"><a href="https://umass.box.com/s/idnntuhs7cclglfglsl8iqhen6f6xn1n" target="_blank" rel="noopener">Paper ↗</a></div>
+            <ul class="chips"><li>PyTorch</li><li>Transformers</li><li>Seq2seq</li></ul>
+          </div>
+        </li>
+        <li class="item">
+          <div class="when">2018</div>
+          <div>
+            <h3><a href="https://github.com/aarshpatel/Super-Resolution-on-Low-Quality-image-of-Faces" target="_blank" rel="noopener">Facial Super-Resolution <span class="arrow">↗</span></a></h3>
+            <p>Reconstructs faces from blurred images in Labeled Faces in the Wild, comparing pixel loss, perceptual loss, and a mix of the two.</p>
+            <div class="links"><a href="https://umass.box.com/shared/static/9n4oktmop1skm79hrkssqr30v3dwvrjd.pdf" target="_blank" rel="noopener">Paper ↗</a></div>
+            <ul class="chips"><li>CNNs</li><li>Computer vision</li></ul>
+          </div>
+        </li>
+        <li class="item">
+          <div class="when">2017</div>
+          <div>
+            <h3><a href="https://github.com/aarshpatel/Modeling-Affect-Intensity" target="_blank" rel="noopener">Affect Intensity in Tweets <span class="arrow">↗</span></a></h3>
+            <p>SemEval 2018 task. Lexicon features plus GloVe embeddings reached a Pearson r of 0.681, beating the original task baseline.</p>
+            <div class="links"><a href="https://umass.box.com/shared/static/em6twdy8e5gsarc58m6z2viiii60s789.pdf" target="_blank" rel="noopener">Paper ↗</a></div>
+            <ul class="chips"><li>NLP</li><li>Regression</li><li>GloVe</li></ul>
+          </div>
+        </li>
+        <li class="item">
+          <div class="when">2017</div>
+          <div>
+            <h3><a href="https://github.com/aarshpatel/Real-Time-Predictive-Analytics" target="_blank" rel="noopener">Real-Time Predictive Maintenance <span class="arrow">↗</span></a></h3>
+            <p>Predicts machine failures from live Black &amp; Decker performance data, with an IoT dashboard for exploratory analysis.</p>
+            <ul class="chips"><li>ML</li><li>IoT</li><li>JavaScript</li></ul>
+          </div>
+        </li>
+      </ol>
+      <a class="more" href="https://github.com/aarshpatel" target="_blank" rel="noopener">More on GitHub <span>→</span></a>
+    </section>
+
+    <section id="skills" aria-label="Skills">
+      <h2 class="sec-title">Skills</h2>
+      <div class="skills-row"><div class="when">ML &amp; LLMs</div><ul class="chips"><li>PyTorch</li><li>Hugging Face</li><li>LLM fine-tuning</li><li>RAG</li><li>LangChain</li><li>Pinecone</li><li>scikit-learn</li><li>Keras</li><li>Pandas</li></ul></div>
+      <div class="skills-row"><div class="when">Infra</div><ul class="chips"><li>Databricks</li><li>AWS</li><li>Azure</li><li>Docker</li><li>Git</li></ul></div>
+      <div class="skills-row"><div class="when">Languages</div><ul class="chips"><li>Python</li><li>SQL</li><li>JavaScript</li><li>React</li><li>Node.js</li></ul></div>
+    </section>
+
+    <footer class="note">
+      <p>Built by hand in plain HTML and CSS, hosted on GitHub Pages. Layout inspired by <a href="https://brittanychiang.com" target="_blank" rel="noopener">Brittany Chiang</a>. I keep a set of <a href="https://drive.google.com/drive/folders/1Hm2ILxy6yczRy4j3-IGaYjYfIxA6PCWt?usp=sharing" target="_blank" rel="noopener">learning notes</a> too.</p>
+    </footer>
+  </main>
+</div>
+
+<script>
+  // Cursor spotlight
+  (function () {
+    var el = document.getElementById('spotlight');
+    if (!matchMedia('(pointer: fine)').matches) return;
+    document.addEventListener('mousemove', function (e) {
+      el.style.background = 'radial-gradient(600px at ' + e.clientX + 'px ' + e.clientY + 'px, var(--spot), transparent 80%)';
+    });
+  })();
+
+  // Highlight active section in the left nav
+  (function () {
+    var links = document.querySelectorAll('nav.toc a');
+    var map = {};
+    links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+    var sections = Array.prototype.map.call(links, function (a) {
+      return document.getElementById(a.getAttribute('href').slice(1));
+    });
+    function update() {
+      var current = sections[0].id;
+      var y = window.scrollY + window.innerHeight * 0.35;
+      sections.forEach(function (s) { if (s.offsetTop <= y) current = s.id; });
+      if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 4) current = sections[sections.length - 1].id;
+      links.forEach(function (a) { a.classList.toggle('active', map[current] === a); });
+    }
+    links.forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var target = document.getElementById(a.getAttribute('href').slice(1));
+        if (!target) return;
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        try { history.replaceState(null, '', '#' + target.id); } catch (err) {}
+      });
+    });
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+  })();
+</script>
+</body>
+</html>
